@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoLógica - Tudo sobre tecnologia</title>
+<style>
+    /*
+******Limpar Formatações******
+*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/*
+******Formatações genéricas******
+*/
+body{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #c4c4c4;
+}
+
+h1{
+    color: #252525;
+    font-size: 40px;
+}
+
+h2{
+    color: #0066cc;
+}
+
+h3{
+    color: #565656;
+    background: #cccccc;
+    padding: 5px;
+}
+/*
+******Header******
+*/
+#header{
+    background-color: #0066cc ;
+    padding: 15px; 
+    text-align: center;   
+}
+
+#logo, #menu {
+    padding: 10px;
+}
+
+#header a:link, #header a:visited{
+    color: #ffffff;
+    padding: 8px 12px;
+}
+
+#header a:hover {
+    color: #0066cc;
+    background: #ffffff;
+    text-decoration: none;
+}
+
+.white {
+    color: #ffffff;
+}
+
+/*
+******content******
+*/
+#content{
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#posts{
+    width: 660px;
+    float: left;
+}
+
+.post{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    text-align: justify; 
+}
+
+.data-post{
+    font-size: 10px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;   
+}
+
+.img-post{
+    width: 620px;
+}
+
+/*
+******Right-side******
+*/
+#right-side{
+    width: 240px;
+    float: right;
+}
+
+.content-right{
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;  
+}
+
+.post-right{
+    font-size: 13px;
+    padding: 5px;
+    border-bottom: 1px dotted #cccccc;
+}
+
+/*
+******Formatação Links******
+*/
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #0066cc;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*
+******Footer******
+*/
+#footer {
+    clear:both;
+    text-align: center ;
+    padding: 15px ;
+    background: #ffffff ;
+    color: #0066cc;
+}
+
+/* Media Queries para tablets */
+@media (min-width: 768px) {
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #posts {
+        width: 68%;
+    }
+    
+    #right-side {
+        width: 30%;
+        margin-top: 0;
+    }
+}
+
+/* Media Queries para desktop */
+@media (min-width: 992px) {
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+    }
+    
+    #menu {
+        margin-top: 0;
+    }
+    
+    #content {
+        padding: 20px 50px;
+    }
+}
+
+/* Melhorias para mobile */
+@media (max-width: 767px) {
+    #logo h1 {
+        font-size: 2em;
+    }
+    
+    #menu a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    
+    .post {
+        padding: 15px;
+    }
+    
+    .content-right {
+        padding: 15px;
+    }
+}
+</style>
+    
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+            <h1>Tecno<span class="white">Lógica</span></h1>
+        </div>
+    
+        <div id="menu">
+            <a href="index.html">Home</a>
+            <a href="pages/jogos.html">Jogos</a>
+            <a href="pages/smartphones.html">Smartphones</a>
+        </div>
+
+    </div>
+
+    <div id="content">
+
+        <div id="posts">
+
+            <!-- abertura postagem -->
+            <div class="post">
+                <h2>Titulo da postagem 6</h2>
+                <span class="data-post">Postado 04 novembro 2024</span>
+                <img class="img-post" src="images/smartphone01.png">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula
+                </p>
+                <a href="">Leia mais</a>
+            </div>
+            <!--fechamento postagem -->
+
+
+
+        </div>
+    
+        <div id="right-side"><!--id #-->
+
+            <div class="content-right">
+                <h3>Postagens recentes</h3>
+
+                <div class="post-right">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="">Leia mais</a>
+                </div>
+
+                <div class="post-right" style="border-bottom: none;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="">Leia mais</a>
+                </div>
+
+            </div>
+
+            <div class="content-right">
+                <h3>Categorias</h3>
+
+                <a href="index.html">Tecnologia</a><br>
+                <a href="pages/jogos.html">Jogos</a><br>
+                <a href="pages/smartphones.html">Smartphones</a><br>
+                
+            </div>
+
+        </div>
+
+        <div id="footer">
+            Todos os direitos reservados - Carlos Wagner Lemos de Oliveira
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+#header {
+    background: #171717;
+    padding: 15px;
+    text-align: center;
+}
+
+#logo h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+#logo span.white {
+    color: #fff;
+}
+
+#menu {
+    margin-top: 10px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#menu a:hover {
+    background: #4e4e4e;
+    border-radius: 5px;
+}
+
+#content {
+    width: 100%;
+    padding: 15px;
+}
+
+#posts {
+    width: 100%;
+}
+
+.post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+    color: #171717;
+    margin-bottom: 10px;
+}
+
+.data-post {
+    font-size: 0.8em;
+    color: #999;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.img-post {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.post a {
+    color: #4e4e4e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+#right-side {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-right {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.content-right h3 {
+    color: #171717;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.post-right {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.post-right p {
+    margin-bottom: 5px;
+}
+
+.post-right a {
+    color: #4e4e4e;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.post-right a:hover {
+    text-decoration: underline;
+}
+
+.content-right a {
+    display: block;
+    color: #4e4e4e;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.content-right a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    background: #171717;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Media Queries para tablets */
+@media (min-width: 768px) {
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #posts {
+        width: 68%;
+    }
+    
+    #right-side {
+        width: 30%;
+        margin-top: 0;
+    }
+}
+
+/* Media Queries para desktop */
+@media (min-width: 992px) {
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+    }
+    
+    #menu {
+        margin-top: 0;
+    }
+    
+    #content {
+        padding: 20px 50px;
+    }
+}
+
+/* Melhorias para mobile */
+@media (max-width: 767px) {
+    #logo h1 {
+        font-size: 2em;
+    }
+    
+    #menu a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    
+    .post {
+        padding: 15px;
+    }
+    
+    .content-right {
+        padding: 15px;
+    }
+}
